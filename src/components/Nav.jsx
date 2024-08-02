@@ -21,7 +21,7 @@ const Navbar = () => {
             Projects
           </a>
           <a
-            href="contact"
+            href="#contact"
             className="text-gray-300 hover:text-teal-400 transition-colors"
           >
             Contact
