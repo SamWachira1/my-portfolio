@@ -1,10 +1,21 @@
+// src/app/page.js
 import Layout from './layout';
+import Navbar from '../components/Nav';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Projects from '@/components/Project';
+import Contact from '@/components/contact';
+
+import "./globals.css";
 
 export default function Home() {
   return (
     <Layout>
-      <h1>Welcome to the Home Page</h1>
-      <p>Start building your portfolio...</p>
+      <Navbar/>
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
     </Layout>
   );
 }
