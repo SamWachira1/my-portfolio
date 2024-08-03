@@ -15,8 +15,8 @@ export default async function handler(req, res) {
 
       // Send email to your receiving address
       const data = await resend.emails.send({
-        from: process.env.FROM_EMAIL, // e.g., 'contact@yourdomain.com'
-        to: [process.env.TO_EMAIL], // Your receiving email
+        from: process.env.FROM_EMAIL, 
+        to: [process.env.TO_EMAIL], 
         subject: subject,
         reply_to: email, // User's email as reply-to
         react: <EmailTemplate name={name} email={email} subject={subject} message={message} />
