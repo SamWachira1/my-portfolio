@@ -3,7 +3,7 @@ import Layout from './layout';
 import Navbar from '../components/Nav';
 import Hero from '../components/Hero';
 import About from '../components/About';
-// import Projects from '@/components/Project';
+import Projects from '@/components/Project';
 import Contact from '@/components/contact';
 
 import "./globals.css";
@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar/>
       <Hero />
       <About />
-      {/* <Projects /> */}
+      <Projects />
       <Contact />
     </Layout>
   );
