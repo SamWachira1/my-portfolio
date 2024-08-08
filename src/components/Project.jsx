@@ -1,10 +1,8 @@
-// /src/components/Projects.jsx
 "use client";
 
 import ProjectCard from './ProjectCard.jsx';
 
 export default function Projects() {
-  // Example project data
   const projects = [
     {
       title: "hYpercomm",
@@ -24,7 +22,6 @@ export default function Projects() {
       embedUrl: "https://lottie.host/embed/808b1b90-1367-41dc-9303-e84976e785f6/OAENS7m0ms.json",
       link: "https://airdnd-ke24.onrender.com/"
     },
-    // Add more projects as needed
   ];
 
   return (
