@@ -1,0 +1,7 @@
+{
+    "public": "public",
+    "rewrites": [
+      { "source": "/resume.pdf", "destination": "/public/resume.pdf" }
+    ]
+  }
+  
