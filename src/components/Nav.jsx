@@ -1,5 +1,3 @@
-// /src/components/Navbar.jsx
-
 const Navbar = () => {
   return (
     <nav className="bg-gray-900 p-4 fixed top-0 w-full z-10 shadow-lg">
@@ -29,9 +27,7 @@ const Navbar = () => {
             Contact
           </a>
           <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/resume"
             className="text-gray-300 hover:text-teal-400 transition-colors"
           >
             Resume
