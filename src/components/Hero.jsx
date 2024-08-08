@@ -9,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 text-white overflow-hidden">
+    <div id="home"  className="relative min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 text-white overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-30"
         style={{ backgroundImage: "url('/path-to-your-background-image.jpg')" }}
@@ -80,7 +80,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-10 animate-bounce text-teal-500">
-        <a href="#next-section">↓ Scroll down</a>
+        <a href="#about">↓ Scroll down</a>
       </div>
     </div>
   );
