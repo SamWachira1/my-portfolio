@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Footer from './Footer';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -38,6 +39,8 @@ export default function Contact() {
   };
 
   return (
+    <>
+  
     <section
       id="contact"
       className="min-h-screen flex flex-col justify-center items-center py-20 px-8 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700 text-white"
@@ -101,5 +104,9 @@ export default function Contact() {
         </form>
       </div>
     </section>
+
+    <Footer/>
+  </>
+
   );
 }

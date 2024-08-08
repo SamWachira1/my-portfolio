@@ -87,9 +87,7 @@ export const AcknowledgmentEmail = ({ name, subject, message }) => (
       </p>
       <p style={{ fontSize: '12px', margin: '0', color: '#7D7D7D' }}>Boston, MA</p>
       <div style={{ fontSize: '18px', marginTop: '10px', display: 'flex', justifyContent: 'center', gap: '10px' }}>
-        <a href="TWITTER_URL" style={{ color: '#007BFF' }}><FaTwitter /></a>
-        <a href="FACEBOOK_URL" style={{ color: '#007BFF' }}><FaFacebookF /></a>
-        <a href="LINKEDIN_URL" style={{ color: '#007BFF' }}><FaLinkedinIn /></a>
+        <a href="" style={{ color: '#007BFF' }}><FaLinkedinIn /></a>
         <a href="GITHUB_URL" style={{ color: '#007BFF' }}><FaGithub /></a>
       </div>
     </footer>
