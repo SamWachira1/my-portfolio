@@ -11,12 +11,17 @@ module.exports = {
         accent: '#f2e9e4',
       },
       animation: {
-        'gradient-x': 'gradient-x 5s ease infinite',
+        'carousel-right': 'carousel-right 30s linear infinite',
+        'carousel-left': 'carousel-left 30s linear infinite',
       },
       keyframes: {
-        'gradient-x': {
-          '0%, 100%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
+        'carousel-right': {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        'carousel-left': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
         },
       },
     },

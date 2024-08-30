@@ -2,12 +2,15 @@
 
 export default function ProjectCard({ title, description, embedUrl, image, link }) {
   return (
-    <div className="bg-gray-800 bg-opacity-90 text-gray-200 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-500 hover:scale-105 hover:shadow-xl">
+    <div className="bg-gray-800 bg-opacity-90 text-gray-200 rounded-lg overflow-hidden shadow-lg transform transition-transform duration-500 hover:scale-105 hover:shadow-xl mx-auto"
+    style={{ maxWidth: '27em' }} // Adjust this value to control the width
+
+    >
       {embedUrl ? (
         <iframe
           src={embedUrl}
-          className="w-full h-48 rounded-t-lg mt-4"
-          style={{ height: '200px', maxWidth: '100%', margin: '1em auto 0 auto',  border: 'none' }}
+          className="w-full h-48 rounded-t-lg"
+          style={{ height: '200px', maxWidth: '100%', margin: '1em auto 0 auto', border: 'none' }}
         ></iframe>
       ) : (
         <img src={image} alt={title} className="w-full h-48 object-cover rounded-t-lg" />

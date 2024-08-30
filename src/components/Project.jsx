@@ -16,12 +16,6 @@ export default function Projects() {
       embedUrl: "https://lottie.host/embed/366e7c78-4562-44b8-bb63-0d82944ba7a3/PmjNnmdYM4.json",
       link: "https://equiflow.onrender.com/"
     },
-    {
-      title: "StayScape",
-      description: "Welcome to StayScape, where users can effortlessly manage and explore a wide range of unique accommodations. Our application offers a comprehensive suite of features designed to enhance your experience, whether you're looking to list your property or find the perfect place to stay.",
-      embedUrl: "https://lottie.host/embed/808b1b90-1367-41dc-9303-e84976e785f6/OAENS7m0ms.json",
-      link: "https://airdnd-ke24.onrender.com/"
-    },
   ];
 
   return (
@@ -29,9 +23,9 @@ export default function Projects() {
       id="projects"
       className="min-h-screen flex flex-col justify-center items-center py-20 px-8 bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white"
     >
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-center max-w-4xl"> {/* Limited max-width */}
         <h2 className="text-5xl font-extrabold mb-12">Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 justify-items-center"> {/* Reduced gap */}
           {projects.map((project, index) => (
             <ProjectCard
               key={index}
@@ -39,6 +33,7 @@ export default function Projects() {
               description={project.description}
               embedUrl={project.embedUrl}
               link={project.link}
+              className="w-full sm:max-w-sm" 
             />
           ))}
         </div>
