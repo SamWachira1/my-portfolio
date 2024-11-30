@@ -26,12 +26,12 @@ const Navbar = () => {
           >
             Contact
           </a>
-          <a
-            href="/resume"
+          {/* <a
+            href="#"
             className="text-gray-300 hover:text-teal-400 transition-colors"
           >
             Resume
-          </a>
+          </a> */}
         </div>
       </div>
     </nav>
